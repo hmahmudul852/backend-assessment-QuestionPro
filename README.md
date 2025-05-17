@@ -80,38 +80,6 @@ npm test
    - Ready for integration with monitoring tools (e.g., Prometheus, Grafana)
    - Error tracking and alerting system ready
 
-## Deployment Instructions
-
-1. **Local Deployment**
-   ```bash
-   npm install
-   npm start
-   ```
-
-2. **Docker Deployment**
-   ```bash
-   docker build -t employee-organogram .
-   docker run -p 3000:3000 employee-organogram
-   ```
-
-3. **Cloud Deployment (AWS)**
-   - Create an EC2 instance
-   - Install Node.js and npm
-   - Clone the repository
-   - Set up environment variables
-   - Use PM2 for process management
-   - Set up Nginx as reverse proxy
-   - Configure SSL certificates
-
-## Security Considerations
-
-- JWT-based authentication
-- Rate limiting to prevent abuse
-- Helmet.js for security headers
-- CORS configuration
-- Input validation and sanitization
-- Regular security audits
-
 ## Future Improvements
 
 1. Implement Redis caching for better performance
